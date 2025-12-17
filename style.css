@@ -1244,9 +1244,190 @@ p {
     stroke-width: 2;
 }
 
+/* Disclosure Section */
+.disclosure-section {
+    padding: 6rem 0;
+    background: linear-gradient(135deg, #fef3c7 0%, #fde68a 50%, #fef3c7 100%);
+    position: relative;
+    overflow: hidden;
+    border-top: 3px solid #f59e0b;
+    border-bottom: 3px solid #f59e0b;
+}
 
+.disclosure-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at 20% 30%, rgba(245, 158, 11, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 80% 70%, rgba(251, 191, 36, 0.08) 0%, transparent 50%);
+    pointer-events: none;
+}
 
+.disclosure-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    position: relative;
+    z-index: 2;
+}
 
+.disclosure-badge {
+    display: inline-block;
+    background: linear-gradient(135deg, #f59e0b, #d97706);
+    color: white;
+    font-family: var(--font-primary);
+    font-size: 0.85rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 0.6rem 1.5rem;
+    border-radius: 50px;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 15px rgba(245, 158, 11, 0.3);
+    animation: pulse-badge 2s ease-in-out infinite;
+}
+
+@keyframes pulse-badge {
+    0%, 100% {
+        box-shadow: 0 4px 15px rgba(245, 158, 11, 0.3);
+    }
+    50% {
+        box-shadow: 0 4px 25px rgba(245, 158, 11, 0.5);
+    }
+}
+
+.disclosure-header h2 {
+    font-family: var(--font-heading);
+    font-size: clamp(2rem, 4vw, 3rem);
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: -1px;
+    color: #78350f;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.disclosure-content {
+    background: white;
+    border-radius: 20px;
+    padding: 3rem;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+    border: 2px solid rgba(245, 158, 11, 0.2);
+}
+
+.disclosure-content p {
+    font-family: var(--font-body);
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--text-secondary);
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.disclosure-content p strong {
+    color: #78350f;
+    font-weight: 700;
+}
+
+.disclosure-features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.disclosure-feature {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.5rem;
+    padding: 1.5rem;
+    background: linear-gradient(135deg, #fffbeb, #fef3c7);
+    border-radius: 15px;
+    border: 1px solid rgba(245, 158, 11, 0.2);
+    transition: all 0.3s ease;
+}
+
+.disclosure-feature:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(245, 158, 11, 0.15);
+    border-color: rgba(245, 158, 11, 0.4);
+}
+
+.disclosure-feature svg {
+    width: 32px;
+    height: 32px;
+    flex-shrink: 0;
+    color: #f59e0b;
+    stroke-width: 2.5;
+    margin-top: 0.25rem;
+}
+
+.disclosure-feature-content h3 {
+    font-family: var(--font-primary);
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #78350f;
+    margin-bottom: 0.5rem;
+    letter-spacing: 0.3px;
+}
+
+.disclosure-feature-content p {
+    font-family: var(--font-body);
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: var(--text-secondary);
+    margin-bottom: 0;
+    text-align: left;
+}
+
+/* Responsive Disclosure Section */
+@media (max-width: 768px) {
+    .disclosure-section {
+        padding: 4rem 0;
+    }
+
+    .disclosure-content {
+        padding: 2rem 1.5rem;
+    }
+
+    .disclosure-features {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .disclosure-header h2 {
+        font-size: 1.8rem;
+    }
+
+    .disclosure-content p {
+        font-size: 1rem;
+    }
+}
+
+/* Footer Disclaimer Styling */
+.footer-disclaimer {
+    margin-top: 1.5rem;
+    padding: 1.5rem;
+    background: rgba(124, 58, 237, 0.05);
+    border-left: 4px solid var(--primary-purple);
+    border-radius: 8px;
+}
+
+.footer-disclaimer p {
+    font-family: var(--font-body);
+    font-size: 0.85rem;
+    line-height: 1.6;
+    color: var(--text-secondary);
+    margin: 0;
+}
+
+.footer-disclaimer strong {
+    color: var(--primary-purple);
+    font-weight: 700;
+}
 
 @keyframes float {
     0%, 100% { transform: translateY(0px); }
@@ -3063,6 +3244,20 @@ p {
     gap: 1.5rem;
     margin-bottom: 2rem;
     flex-wrap: wrap;
+}
+
+/* Ensure CTA banner buttons are always in a row */
+.cta-banner .cta-buttons {
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: center;
+}
+
+/* Force row layout for CTA banner buttons on all screen sizes */
+.cta-banner .cta-buttons, .cta-banner .cta-buttons .btn {
+    flex-direction: row !important;
+    align-items: center !important;
+    width: auto !important;
 }
 
 .cta-banner .btn-primary {
