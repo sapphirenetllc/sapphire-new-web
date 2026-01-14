@@ -550,3 +550,58 @@ if ('PerformanceObserver' in window) {
     
     observer.observe({ entryTypes: ['largest-contentful-paint'] });
 }
+// Call Now Popup
+class CallPopup {
+    constructor() {
+        this.popup = document.getElementById('callPopup');
+        this.closeBtn = document.getElementById('closePopup');
+        this.showDelay = 0; // Show immediately
+        this.hasBeenClosed = false;
+        
+        if (this.popup) {
+            this.init();
+        }
+    }
+
+    init() {
+        // Check if popup was previously closed in this session
+        const popupClosed = sessionStorage.getItem('callPopupClosed');
+        
+        if (!popupClosed) {
+            // Show popup immediately
+            this.show();
+        }
+
+        // Close button handler
+        this.closeBtn?.addEventListener('click', () => {
+            this.hide();
+            sessionStorage.setItem('callPopupClosed', 'true');
+        });
+
+        // Close on outside click
+        this.popup?.addEventListener('click', (e) => {
+            if (e.target === this.popup) {
+                this.hide();
+                sessionStorage.setItem('callPopupClosed', 'true');
+            }
+        });
+    }
+
+    show() {
+        if (this.popup && !this.hasBeenClosed) {
+            this.popup.classList.add('show');
+        }
+    }
+
+    hide() {
+        if (this.popup) {
+            this.popup.classList.remove('show');
+            this.hasBeenClosed = true;
+        }
+    }
+}
+
+// Initialize Call Popup
+document.addEventListener('DOMContentLoaded', () => {
+    new CallPopup();
+});
