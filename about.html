@@ -3,28 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us - Sapphire Internet | Independent Connectivity Assistance Platform</title>
-    <meta name="description" content="Learn about Sapphire Internet's mission as an independent third-party assistance platform. We guide consumers through internet, cable, and streaming options with unbiased support.">
+    <title>About Us – Sapphire Internet</title>
+    <meta name="description" content="Sapphire Internet is an independent third-party entertainment guidance platform. Learn about our mission, values, and team.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Dancing+Script:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="subpages.css">
 </head>
 <body>
-    <!-- Background Gradient Blobs -->
-    <div class="gradient-blobs">
-        <div class="blob blob-1"></div>
-        <div class="blob blob-2"></div>
-        <div class="blob blob-3"></div>
-        <div class="blob blob-4"></div>
-    </div>
 
     <!-- Navigation -->
     <nav class="navbar" id="navbar">
         <div class="nav-container">
             <div class="nav-logo">
-                <a href="index.html" style="text-decoration: none; color: inherit;">
-                    <span class="logo-text">Sapphire<span class="highlight">Internet</span></span>
+                <a href="index.html">
+                    <svg class="logo-mark" viewBox="0 0 32 32" fill="none" width="26" height="26">
+                        <path d="M16 2L28 8V16C28 22.627 22.627 28 16 28C9.373 28 4 22.627 4 16V8L16 2Z" fill="url(#lg1)"/>
+                        <path d="M11 16L14 19L21 12" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <defs><linearGradient id="lg1" x1="4" y1="2" x2="28" y2="28" gradientUnits="userSpaceOnUse"><stop stop-color="#6366F1"/><stop offset="1" stop-color="#EC4899"/></linearGradient></defs>
+                    </svg>
+                    <span class="logo-word">Sapphire</span><span class="logo-sub">Internet</span>
                 </a>
             </div>
             <div class="nav-menu" id="nav-menu">
@@ -32,362 +31,308 @@
                 <a href="services.html" class="nav-link">Services</a>
                 <a href="about.html" class="nav-link active">About</a>
                 <a href="contact.html" class="nav-link">Contact</a>
-                <a href="tel:+18332250459" class="nav-cta"> (833) 225-0459</a>
+                <a href="tel:+18883594451" class="nav-cta">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                    (888) 359-4451
+                </a>
             </div>
-            <div class="nav-toggle" id="nav-toggle">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
         </div>
     </nav>
 
-    <!-- About Hero Section -->
-    <section class="about-hero">
+    <!-- Hero -->
+    <section class="sp-hero">
+        <div class="sp-hero-mesh"></div>
         <div class="container">
-            <div class="about-hero-content">
-                <h1 class="about-hero-title">
-                    Helping You Navigate <span class="gradient-text">Connectivity</span> Choices
-                </h1>
-                <p class="about-hero-subtitle">
-                    Since launching in 2025, Sapphire Internet has been dedicated to providing independent, unbiased guidance for consumers navigating internet, cable, and streaming options. We help you make informed decisions with personalized assistance and expert support.
-                </p>
-                <div class="about-stats">
-                    <div class="stat-item">
-                        <div class="stat-number">10,000+</div>
-                        <div class="stat-label">Clients Assisted</div>
-                    </div>
-                    <div class="stat-item">
-                        <div class="stat-number">2025</div>
-                        <div class="stat-label">Year Launched</div>
-                    </div>
-                    <div class="stat-item">
-                        <div class="stat-number">100%</div>
-                        <div class="stat-label">Independent</div>
-                    </div>
-                    <div class="stat-item">
-                        <div class="stat-number">24/7</div>
-                        <div class="stat-label">Support Available</div>
-                    </div>
+            <div class="sp-hero-inner">
+                <div class="section-label">About Us</div>
+                <h1 class="sp-hero-title">Helping You Navigate <span class="grad-text">Connectivity Choices</span></h1>
+                <p class="sp-hero-sub">Since 2025, Sapphire Internet has provided independent, unbiased guidance for consumers navigating internet, cable, and streaming options — with zero provider affiliation.</p>
+                <div class="sp-disclaimer-pill">
+                    <svg viewBox="0 0 16 16" fill="currentColor" width="12" height="12"><path d="M8 1a7 7 0 1 0 0 14A7 7 0 0 0 8 1zm0 3a.75.75 0 1 1 0 1.5A.75.75 0 0 1 8 4zm-.25 3h1.5v4h-1.5V7z"/></svg>
+                    Independent third-party platform — not an ISP or provider affiliate
+                </div>
+                <div class="sp-stats-row">
+                    <div class="sp-stat"><strong>1,000+</strong><span>Clients Assisted</span></div>
+                    <div class="sp-stat-div"></div>
+                    <div class="sp-stat"><strong>2025</strong><span>Year Launched</span></div>
+                    <div class="sp-stat-div"></div>
+                    <div class="sp-stat"><strong>100%</strong><span>Independent</span></div>
+                    <div class="sp-stat-div"></div>
+                    <div class="sp-stat"><strong>24/7</strong><span>Support Available</span></div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Our Story Section -->
-    <section class="our-story">
+    <!-- Our Story -->
+    <section class="sp-two-col" style="background:var(--bg-dark)">
         <div class="container">
-            <div class="story-content">
-                <div class="story-text" data-aos="fade-right">
-                    <h2 class="section-title">Our <span class="highlight">Story</span></h2>
-                    <p class="story-description">
-                        Launched in 2025 with a clear mission: to help consumers navigate the overwhelming landscape of internet, cable, and streaming options with independent, unbiased guidance. We recognized that people needed a trusted resource—free from provider affiliations—to help them make informed connectivity decisions.
-                    </p>
-                    <p class="story-description">
-                        We saw that many consumers felt confused by countless provider options, conflicting information, and aggressive sales tactics. Our founders created Sapphire Internet as an independent assistance platform where clients receive honest guidance, personalized support, and clear information to help them choose the right services for their needs.
-                    </p>
-                    <p class="story-description">
-                        Today, we're proud to have assisted thousands of clients across the country, earning trust through transparent communication and genuine care. Our commitment remains steadfast: providing expert guidance and support with the independence, transparency, and personal attention that only a truly unbiased platform can deliver.
-                    </p>
+            <div class="sp-split">
+                <div class="sp-split-text">
+                    <div class="section-label">Our Story</div>
+                    <h2 class="section-title">Why We <span class="grad-text">Exist</span></h2>
+                    <p>We launched in 2025 with a clear mission: help consumers navigate the overwhelming landscape of internet, cable, and streaming options with independent, unbiased guidance. We recognised that people needed a trusted resource — free from provider affiliations — to make informed connectivity decisions.</p>
+                    <p>Many consumers felt confused by countless provider options, conflicting information, and aggressive sales tactics. Our founders created Sapphire Internet as an independent assistance platform where clients receive honest guidance, personalised support, and clear information.</p>
+                    <p>Today, we've assisted thousands of clients across the country, earning trust through transparent communication and genuine care.</p>
                 </div>
-                <div class="story-image" data-aos="fade-left">
-                    <img src="https://images.pexels.com/photos/325229/pexels-photo-325229.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Fiber Optic Network Infrastructure" loading="lazy">
+                <div class="sp-split-img">
+                    <img src="https://images.pexels.com/photos/325229/pexels-photo-325229.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Fiber Optic Network">
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Mission & Values Section -->
-    <section class="mission-values">
+    <!-- Values -->
+    <section class="sp-section" style="background:var(--bg-deep)">
         <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Our Mission & <span class="highlight">Values</span></h2>
-                <p class="section-subtitle">The principles that guide everything we do</p>
+            <div class="sp-section-head">
+                <div class="section-label">Our Values</div>
+                <h2 class="section-title">Mission &amp; <span class="grad-text">Principles</span></h2>
+                <p class="section-sub">The principles that guide everything we do</p>
             </div>
-            <div class="values-grid">
-                <div class="value-card" data-aos="fade-up">
-                    <div class="value-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                            <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
-                        </svg>
+            <div class="sp-cards-4">
+                <div class="sp-icon-card">
+                    <div class="sp-ic-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" width="22" height="22"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
                     </div>
                     <h3>Independence</h3>
                     <p>We maintain complete independence from all providers, ensuring our guidance is always unbiased and focused solely on your best interests.</p>
                 </div>
-                <div class="value-card" data-aos="fade-up" data-aos-delay="100">
-                    <div class="value-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                            <path d="M9 12l2 2 4-4"/>
-                            <path d="M21 12c.552 0 1-.448 1-1V5c0-.552-.448-1-1-1H3c-.552 0-1 .448-1 1v6c0 .552.448 1 1 1"/>
-                            <path d="M3 12v7c0 .552.448 1 1 1h16c.552 0 1-.448 1-1v-7"/>
-                        </svg>
+                <div class="sp-icon-card">
+                    <div class="sp-ic-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" width="22" height="22"><path d="M9 12l2 2 4-4"/><rect x="3" y="3" width="18" height="18" rx="2"/></svg>
                     </div>
                     <h3>Transparency</h3>
                     <p>Clear, upfront information about our assistance fees and services. We explain exactly what you're paying for with no hidden charges.</p>
                 </div>
-                <div class="value-card" data-aos="fade-up" data-aos-delay="200">
-                    <div class="value-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
-                            <circle cx="9" cy="7" r="4"/>
-                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
-                            <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
-                        </svg>
+                <div class="sp-icon-card">
+                    <div class="sp-ic-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" width="22" height="22"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
                     </div>
                     <h3>Client-Focused</h3>
-                    <p>Your needs come first. We take time to understand your situation and provide personalized guidance tailored to your specific requirements.</p>
+                    <p>Your needs come first. We take time to understand your situation and provide personalised guidance tailored to your specific requirements.</p>
                 </div>
-                <div class="value-card" data-aos="fade-up" data-aos-delay="300">
-                    <div class="value-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
-                        </svg>
+                <div class="sp-icon-card">
+                    <div class="sp-ic-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" width="22" height="22"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
                     </div>
                     <h3>Integrity</h3>
-                    <p>Honest communication and genuine care for our clients are the foundation of our assistance platform. We're here to help, not to sell.</p>
+                    <p>Honest communication and genuine care for our clients are the foundation of our platform. We're here to help, never to sell.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Team Section -->
-    <section class="team-section">
+    <!-- What We Do / Don't Do -->
+    <section class="sp-section" style="background:var(--bg-dark)">
         <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Meet Our <span class="highlight">Support</span> Team</h2>
-                <p class="section-subtitle">Dedicated professionals ready to assist with your connectivity questions</p>
-            </div>
-            <div class="team-grid">
-                <div class="team-member" data-aos="fade-up">
-                    <div class="member-image">
-                        <img src="https://images.pexels.com/photos/2182970/pexels-photo-2182970.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Sarah Johnson, CEO" loading="lazy">
+            <div class="sp-do-grid">
+                <!-- Do -->
+                <div class="sp-do-col sp-do-yes">
+                    <div class="sp-do-header">
+                        <div class="sp-do-badge sp-do-green">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="16" height="16"><polyline points="20,6 9,17 4,12"/></svg>
+                            What We DO
+                        </div>
+                        <h3>How We Help You</h3>
                     </div>
-                    <div class="member-info">
-                        <h3>Sarah Johnson</h3>
-                        <p class="member-title">Chief Executive Officer</p>
-                        <p class="member-bio">With extensive experience in consumer services, Sarah leads our mission to provide independent, unbiased connectivity guidance.</p>
+                    <div class="sp-do-list">
+                        <div class="sp-do-item">
+                            <div class="sp-do-icon sp-do-icon-green">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><polyline points="20,6 9,17 4,12"/></svg>
+                            </div>
+                            <div>
+                                <h4>Understand Service Options</h4>
+                                <p>Help you understand internet and broadband service options available in your area.</p>
+                            </div>
+                        </div>
+                        <div class="sp-do-item">
+                            <div class="sp-do-icon sp-do-icon-green">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><polyline points="20,6 9,17 4,12"/></svg>
+                            </div>
+                            <div>
+                                <h4>Practical Guidance</h4>
+                                <p>Provide practical guidance on connectivity issues, troubleshooting, and plan comparisons.</p>
+                            </div>
+                        </div>
+                        <div class="sp-do-item">
+                            <div class="sp-do-icon sp-do-icon-green">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><polyline points="20,6 9,17 4,12"/></svg>
+                            </div>
+                            <div>
+                                <h4>Navigate Provider Processes</h4>
+                                <p>Teach you how to navigate service provider processes and systems confidently.</p>
+                            </div>
+                        </div>
+                        <div class="sp-do-item">
+                            <div class="sp-do-icon sp-do-icon-green">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><polyline points="20,6 9,17 4,12"/></svg>
+                            </div>
+                            <div>
+                                <h4>Streaming Platform Advice</h4>
+                                <p>Guide you through 50+ streaming platforms to find the best match for your needs.</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="team-member" data-aos="fade-up" data-aos-delay="100">
-                    <div class="member-image">
-                        <img src="https://images.pexels.com/photos/3184639/pexels-photo-3184639.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Michael Chen, CTO" loading="lazy">
+                <!-- Don't Do -->
+                <div class="sp-do-col sp-do-no">
+                    <div class="sp-do-header">
+                        <div class="sp-do-badge sp-do-red">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="16" height="16"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+                            What We DON'T Do
+                        </div>
+                        <h3>We Are Not a Provider</h3>
                     </div>
-                    <div class="member-info">
-                        <h3>Michael Chen</h3>
-                        <p class="member-title">Chief Operations Officer</p>
-                        <p class="member-bio">Michael ensures our platform delivers seamless assistance experiences and maintains the highest standards of service quality.</p>
-                    </div>
-                </div>
-                <div class="team-member" data-aos="fade-up" data-aos-delay="200">
-                    <div class="member-image">
-                        <img src="https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=400" alt="David Rodriguez, VP Customer Service" loading="lazy">
-                    </div>
-                    <div class="member-info">
-                        <h3>David Rodriguez</h3>
-                        <p class="member-title">VP of Client Support</p>
-                        <p class="member-bio">David ensures every client receives personalized guidance and expert assistance from our knowledgeable support team.</p>
+                    <div class="sp-do-list">
+                        <div class="sp-do-item">
+                            <div class="sp-do-icon sp-do-icon-red">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+                            </div>
+                            <div>
+                                <h4>NOT an ISP</h4>
+                                <p>We are not an internet service provider and do not supply internet connections.</p>
+                            </div>
+                        </div>
+                        <div class="sp-do-item">
+                            <div class="sp-do-icon sp-do-icon-red">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+                            </div>
+                            <div>
+                                <h4>NOT Affiliated</h4>
+                                <p>Not affiliated, authorised, or endorsed by any telecom or cable company.</p>
+                            </div>
+                        </div>
+                        <div class="sp-do-item">
+                            <div class="sp-do-icon sp-do-icon-red">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+                            </div>
+                            <div>
+                                <h4>NOT Selling Services</h4>
+                                <p>We do not sell official ISP services or provide guaranteed technical fixes.</p>
+                            </div>
+                        </div>
+                        <div class="sp-do-item">
+                            <div class="sp-do-icon sp-do-icon-red">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+                            </div>
+                            <div>
+                                <h4>NOT a Provider Representative</h4>
+                                <p>All mentions of providers are for informational purposes only.</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Technology & Infrastructure Section -->
-    <section class="technology-section">
+    <!-- Team -->
+    <section class="sp-section" style="background:var(--bg-deep)">
         <div class="container">
-            <div class="technology-content">
-                <div class="technology-text" data-aos="fade-right">
-                    <h2 class="section-title">What We <span class="highlight">DO</span></h2>
-                    <p class="technology-description">
-                        At Sapphire Internet, we help users navigate the complex connectivity landscape with independent guidance and educational support.
-                    </p>
-                    <div class="tech-features">
-                        <div class="tech-feature">
-                            <div class="tech-icon">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                                    <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
-                                </svg>
-                            </div>
-                            <div>
-                                <h4>✓ Understand Service Options</h4>
-                                <p>Help you understand internet/broadband service options available in your area</p>
-                            </div>
-                        </div>
-                        <div class="tech-feature">
-                            <div class="tech-icon">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
-                                </svg>
-                            </div>
-                            <div>
-                                <h4>✓ Practical Guidance</h4>
-                                <p>Provide practical guidance on connectivity issues and troubleshooting</p>
-                            </div>
-                        </div>
-                        <div class="tech-feature">
-                            <div class="tech-icon">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                                    <circle cx="12" cy="12" r="10"/>
-                                    <polyline points="12,6 12,12 16,14"/>
-                                </svg>
-                            </div>
-                            <div>
-                                <h4>✓ Learn Provider Processes</h4>
-                                <p>Teach you how to navigate service provider processes and systems</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="technology-image" data-aos="fade-left">
-                    <img src="https://images.pexels.com/photos/1181396/pexels-photo-1181396.jpeg?auto=compress&cs=tinysrgb&w=800\" alt=\"Independent Guidance Platform\" loading=\"lazy\">
-                </div>
+            <div class="sp-section-head">
+                <div class="section-label">Our Team</div>
+                <h2 class="section-title">Meet Our <span class="grad-text">Support Team</span></h2>
+                <p class="section-sub">Dedicated professionals ready to assist with your connectivity questions</p>
             </div>
-            
-            <!-- What We DON'T Do Section -->
-            <div class=\"technology-content\" style=\"margin-top: 80px; flex-direction: row-reverse;\">
-                <div class=\"technology-text\" data-aos=\"fade-left\">
-                    <h2 class=\"section-title\">What We <span style=\"color: #ff6b6b;\">DON'T</span> Do</h2>
-                    <p class=\"technology-description\">
-                        To avoid confusion, here's what we are NOT:
-                    </p>
-                    <div class=\"tech-features\">
-                        <div class=\"tech-feature\" style=\"background: rgba(255,107,107,0.05);\">
-                            <div class=\"tech-icon\" style=\"color: #ff6b6b;\">
-                                <svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\">
-                                    <path d=\"M13 2L3 14h9l-1 8 10-12h-9l1-8z\"/>
-                                </svg>
-                            </div>
-                            <div>
-                                <h4>✗ NOT an ISP</h4>
-                                <p>We are NOT an internet service provider (ISP)</p>
-                            </div>
-                        </div>
-                        <div class=\"tech-feature\" style=\"background: rgba(255,107,107,0.05);\">
-                            <div class=\"tech-icon\" style=\"color: #ff6b6b;\">
-                                <svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\">
-                                    <path d=\"M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z\"/>
-                                </svg>
-                            </div>
-                            <div>
-                                <h4>✗ NOT Affiliated</h4>
-                                <p>NOT affiliated, authorized, or endorsed by any telecom/cable company</p>
-                            </div>
-                        </div>
-                        <div class=\"tech-feature\" style=\"background: rgba(255,107,107,0.05);\">
-                            <div class=\"tech-icon\" style=\"color: #ff6b6b;\">
-                                <svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\">
-                                    <circle cx=\"12\" cy=\"12\" r=\"10\"/>
-                                    <polyline points=\"12,6 12,12 16,14\"/>
-                                </svg>
-                            </div>
-                            <div>
-                                <h4>✗ NOT Selling Services</h4>
-                                <p>We do NOT sell official ISP services or provide guaranteed technical fixes</p>
-                            </div>
-                        </div>
+            <div class="sp-team-grid">
+                <div class="sp-team-card">
+                    <div class="sp-team-img">
+                        <img src="https://images.pexels.com/photos/2182970/pexels-photo-2182970.jpeg?auto=compress&cs=tinysrgb&w=300" alt="Sarah Johnson">
                     </div>
-                    <div style=\"margin-top: 30px; padding: 20px; background: rgba(255,107,107,0.1); border-radius: 10px; border-left: 4px solid #ff6b6b;\">
-                        <p style=\"font-size: 1rem; font-weight: 500; margin: 0;\">📌 All mentions of providers are for informational purposes only</p>
-                    </div>
+                    <h3>Sarah Johnson</h3>
+                    <span class="sp-team-role">Chief Executive Officer</span>
+                    <p>With extensive experience in consumer services, Sarah leads our mission to provide independent, unbiased connectivity guidance.</p>
                 </div>
-                <div class=\"technology-image\" data-aos=\"fade-right\">
-                    <img src=\"https://images.pexels.com/photos/325229/pexels-photo-325229.jpeg?auto=compress&cs=tinysrgb&w=800\" alt=\"Independent Platform\" loading=\"lazy\">
+                <div class="sp-team-card">
+                    <div class="sp-team-img">
+                        <img src="https://images.pexels.com/photos/3184639/pexels-photo-3184639.jpeg?auto=compress&cs=tinysrgb&w=300" alt="Michael Chen">
+                    </div>
+                    <h3>Michael Chen</h3>
+                    <span class="sp-team-role">Chief Operations Officer</span>
+                    <p>Michael ensures our platform delivers seamless assistance experiences and maintains the highest standards of service quality.</p>
+                </div>
+                <div class="sp-team-card">
+                    <div class="sp-team-img">
+                        <img src="https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=300" alt="David Rodriguez">
+                    </div>
+                    <h3>David Rodriguez</h3>
+                    <span class="sp-team-role">VP of Client Support</span>
+                    <p>David ensures every client receives personalised guidance and expert assistance from our knowledgeable support team.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Community Involvement Section -->
-    <!-- REMOVED - Not applicable as independent guidance platform -->
-
-    <!-- Awards & Recognition Section -->
-    <!-- REMOVED - Not applicable as independent guidance platform -->
-
-    <!-- Contact CTA Section -->
-    <section class="about-cta">
+    <!-- CTA -->
+    <section class="sp-cta-section">
         <div class="container">
-            <div class="cta-content">
-                <h2>Ready to Get <span class="highlight">Independent Guidance?</span></h2>
-                <p>Talk to an advisor who can help you navigate connectivity options without sales pressure. Get educational support and practical guidance from our independent platform.</p>
-                <p style="font-size: 0.95rem; opacity: 0.85; margin-top: 15px;">📌 <em>Not an ISP. No brand affiliation. Guidance only.</em></p>
-                <div class="cta-buttons">
-                    <a href="tel:+18332250459" class="btn btn-primary pulse">Call Independent Advisor: (833) 225-0459</a>
-                    <a href="contact.html" class="btn btn-secondary">Contact Us</a>
+            <div class="sp-cta-box">
+                <div class="section-label">Get Started</div>
+                <h2>Ready for Independent <span class="grad-text">Guidance?</span></h2>
+                <p>Talk to an advisor who can help you navigate connectivity options without sales pressure. Independent support, available 24/7.</p>
+                <div class="sp-cta-btns">
+                    <a href="tel:+18883594451" class="btn-hero-primary">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="17" height="17"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                        Call (888) 359-4451
+                    </a>
+                    <a href="contact.html" class="btn-hero-secondary">Contact Us</a>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="footer">
+    <footer class="sp-footer">
         <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <div class="footer-logo">
-                        <span class="logo-text">Sapphire<span class="highlight">Internet</span></span>
+            <div class="sp-footer-grid">
+                <div class="sp-footer-brand">
+                    <div class="sp-footer-logo">
+                        <svg viewBox="0 0 32 32" fill="none" width="22" height="22"><path d="M16 2L28 8V16C28 22.627 22.627 28 16 28C9.373 28 4 22.627 4 16V8L16 2Z" fill="url(#flg)"/><path d="M11 16L14 19L21 12" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/><defs><linearGradient id="flg" x1="4" y1="2" x2="28" y2="28" gradientUnits="userSpaceOnUse"><stop stop-color="#6366F1"/><stop offset="1" stop-color="#EC4899"/></linearGradient></defs></svg>
+                        <span class="logo-word">Sapphire</span><span class="logo-sub">Internet</span>
                     </div>
-                    <p>Independent third-party guidance platform helping users understand connectivity options.</p>
-                    <div class="footer-disclaimer">
-                        <p><strong>Disclaimer:</strong> Sapphire Internet is an independent third-party guidance platform launched in 2025. We are NOT an ISP. Not affiliated with, endorsed by, or sponsored by any provider. All trademarks belong to their respective owners.</p>
-                    </div>
+                    <p>Independent third-party guidance platform. Not an ISP. Not affiliated with any provider.</p>
+                    <a href="tel:+18883594451" class="sp-footer-phone">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                        (888) 359-4451
+                    </a>
                 </div>
-                <div class="footer-section">
-                    <h3>Services</h3>
+                <div class="sp-footer-col">
+                    <h4>Services</h4>
                     <ul>
+                        <li><a href="services.html">Streaming Guidance</a></li>
                         <li><a href="services.html">Internet Guidance</a></li>
-                        <li><a href="services.html">Cable TV Info</a></li>
-                        <li><a href="services.html">Setup Support</a></li>
+                        <li><a href="services.html">Cable TV Assistance</a></li>
                         <li><a href="services.html">24/7 Advisors</a></li>
                     </ul>
                 </div>
-                <div class="footer-section">
-                    <h3>Company</h3>
+                <div class="sp-footer-col">
+                    <h4>Company</h4>
                     <ul>
-                        <li><a href="about.html">About Platform</a></li>
-                        <li><a href="services.html">Our Services</a></li>
+                        <li><a href="about.html">About Us</a></li>
                         <li><a href="contact.html">Contact</a></li>
-                        <li><a href="tel:+18332250459">Advisor Line</a></li>
+                        <li><a href="index.html">Home</a></li>
                     </ul>
                 </div>
-                <div class="footer-section">
-                    <h3>Legal</h3>
+                <div class="sp-footer-col">
+                    <h4>Legal</h4>
                     <ul>
                         <li><a href="privacy-policy.html">Privacy Policy</a></li>
-                        <li><a href="terms-conditions.html">Terms & Conditions</a></li>
+                        <li><a href="terms-conditions.html">Terms &amp; Conditions</a></li>
                         <li><a href="refund-policy.html">Refund Policy</a></li>
+                        <li><a href="disclaimer.html">Disclaimer</a></li>
                     </ul>
                 </div>
-                <div class="footer-section">
-                    <h3>Contact</h3>
-                    <div class="contact-info">
-                        <div class="contact-item">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
-                            </svg>
-                            <a href="tel:+18332250459"> (833) 225-0459</a>
-                        </div>
-                        <div class="contact-item">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
-                                <polyline points="22,6 12,13 2,6"/>
-                            </svg>
-                            <span>support@sapphire.net</span>
-                        </div>
-                      
-                           
-                        </div>
-                    </div>
-                </div>
             </div>
-            <div class="footer-bottom">
-                <p>&copy; 2025 Sapphire Internet. All rights reserved. Built with cutting-edge technology for the future of connectivity.</p>
+            <div class="sp-footer-bottom">
+                <p>&copy; 2025 Sapphire Internet. All rights reserved. Independent guidance platform — not affiliated with any streaming or internet provider.</p>
             </div>
         </div>
     </footer>
 
-    <!-- Script -->
     <script src="script.js"></script>
 </body>
 </html>
-
-

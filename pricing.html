@@ -3,126 +3,193 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Independent Guidance Platform - Sapphire Internet</title>
-    <meta name="description" content="Sapphire Internet is an independent guidance platform. We do NOT sell service plans. Get independent advice and educational support.">
-    <meta http-equiv="refresh" content="5;url=services.html">
+    <title>Pricing – Sapphire Internet</title>
+    <meta name="description" content="Sapphire Internet guidance pricing. We do NOT sell service plans. Get independent advice and educational support.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Dancing+Script:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <style>
-        .redirect-page {
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            padding: 40px 20px;
-        }
-        .redirect-content {
-            background: white;
-            padding: 60px 40px;
-            border-radius: 20px;
-            max-width: 700px;
-            text-align: center;
-            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
-        }
-        .redirect-content h1 {
-            font-size: 2.5rem;
-            color: #667eea;
-            margin-bottom: 20px;
-        }
-        .redirect-content .highlight {
-            color: #ff6b6b;
-        }
-        .redirect-content p {
-            font-size: 1.2rem;
-            color: #555;
-            margin-bottom: 15px;
-            line-height: 1.8;
-        }
-        .redirect-content .disclaimer {
-            background: rgba(255,107,107,0.1);
-            padding: 20px;
-            border-radius: 10px;
-            border-left: 4px solid #ff6b6b;
-            margin: 30px 0;
-        }
-        .redirect-content .disclaimer p {
-            margin: 0;
-            font-weight: 600;
-            color: #ff3333;
-        }
-        .redirect-buttons {
-            display: flex;
-            gap: 15px;
-            justify-content: center;
-            margin-top: 30px;
-            flex-wrap: wrap;
-        }
-        .btn {
-            padding: 15px 30px;
-            border-radius: 50px;
-            text-decoration: none;
-            font-weight: 600;
-            transition: all 0.3s ease;
-            display: inline-block;
-        }
-        .btn-primary {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-        }
-        .btn-primary:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 10px 25px rgba(102,126,234,0.4);
-        }
-        .btn-secondary {
-            background: white;
-            color: #667eea;
-            border: 2px solid #667eea;
-        }
-        .btn-secondary:hover {
-            background: #667eea;
-            color: white;
-        }
-    </style>
+    <link rel="stylesheet" href="subpages.css">
 </head>
 <body>
-    <!-- Background Gradient Blobs -->
-    <div class="gradient-blobs">
-        <div class="blob blob-1"></div>
-        <div class="blob blob-2"></div>
-        <div class="blob blob-3"></div>
-        <div class="blob blob-4"></div>
-    </div>
 
-    <!-- Redirect Content -->
-    <section class="redirect-page">
-        <div class="redirect-content">
-            <h1>We <span class="highlight">DON'T</span> Sell Service Plans</h1>
-            
-            <p>Sapphire Internet is an <strong>independent guidance platform</strong> - we are <strong>NOT an internet service provider (ISP)</strong>.</p>
-            
-            <div class="disclaimer">
-                <p>📌 We do NOT sell internet, cable, or streaming plans</p>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">
+                    <svg viewBox="0 0 32 32" fill="none" width="26" height="26">
+                        <path d="M16 2L28 8V16C28 22.627 22.627 28 16 28C9.373 28 4 22.627 4 16V8L16 2Z" fill="url(#lg1)"/>
+                        <path d="M11 16L14 19L21 12" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <defs><linearGradient id="lg1" x1="4" y1="2" x2="28" y2="28" gradientUnits="userSpaceOnUse"><stop stop-color="#6366F1"/><stop offset="1" stop-color="#EC4899"/></linearGradient></defs>
+                    </svg>
+                    <span class="logo-word">Sapphire</span><span class="logo-sub">Internet</span>
+                </a>
             </div>
-            
-            <p>We provide:</p>
-            <p><strong>✓ Educational guidance</strong> on connectivity options<br>
-            <strong>✓ Independent advice</strong> without provider bias<br>
-            <strong>✓ Help understanding</strong> service provider processes</p>
-            
-            <p style="margin-top: 30px; font-size: 1rem; opacity: 0.8;">Redirecting you to our services page in 5 seconds...</p>
-            
-            <div class="redirect-buttons">
-                <a href="services.html" class="btn btn-primary">View Our Guidance Services</a>
-                <a href="tel:+18332250459" class="btn btn-secondary">Call Advisor: (833) 225-0459</a>
+            <div class="nav-menu" id="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="services.html" class="nav-link">Services</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+                <a href="tel:+18883594451" class="nav-cta">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                    (888) 359-4451
+                </a>
+            </div>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="sp-hero">
+        <div class="sp-hero-mesh"></div>
+        <div class="container">
+            <div class="sp-hero-inner">
+                <div class="section-label">Guidance Pricing</div>
+                <h1 class="sp-hero-title">Independent <span class="grad-text">Advisory Fees</span></h1>
+                <p class="sp-hero-sub">We are NOT a service provider. Our fees cover independent advisory and guidance services only. You purchase internet or streaming plans directly from providers of your choice.</p>
+                <div class="sp-disclaimer-pill">
+                    <svg viewBox="0 0 16 16" fill="currentColor" width="12" height="12"><path d="M8 1a7 7 0 1 0 0 14A7 7 0 0 0 8 1zm0 3a.75.75 0 1 1 0 1.5A.75.75 0 0 1 8 4zm-.25 3h1.5v4h-1.5V7z"/></svg>
+                    Sapphire Internet is an independent guidance platform — not an ISP or streaming service
+                </div>
             </div>
         </div>
     </section>
 
+    <!-- Pricing Cards -->
+    <section class="sp-section" style="background:var(--bg-dark)">
+        <div class="container">
+            <div class="sp-section-head">
+                <h2 class="section-title">Advisory <span class="grad-text">Service Tiers</span></h2>
+                <p class="section-sub">Transparent, flat-rate guidance fees — completely separate from any provider charges.</p>
+            </div>
+            <div class="sp-pricing-grid">
+                <div class="sp-price-card">
+                    <div class="sp-pc-header">
+                        <div class="sp-pc-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" width="22" height="22"><circle cx="12" cy="12" r="10"/><path d="M12 8v4m0 4h.01"/></svg>
+                        </div>
+                        <h3>Basic Guidance</h3>
+                        <p>One-time advisory session</p>
+                    </div>
+                    <div class="sp-pc-price"><span>$49</span><small>.99</small></div>
+                    <ul class="sp-pc-features">
+                        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="14" height="14"><polyline points="20,6 9,17 4,12"/></svg> Provider comparison guidance</li>
+                        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="14" height="14"><polyline points="20,6 9,17 4,12"/></svg> Basic plan recommendations</li>
+                        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="14" height="14"><polyline points="20,6 9,17 4,12"/></svg> 30-minute advisor call</li>
+                        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="14" height="14"><polyline points="20,6 9,17 4,12"/></svg> Follow-up email support</li>
+                    </ul>
+                    <a href="tel:+18883594451" class="btn-hero-secondary" style="width:100%;justify-content:center;text-align:center;">
+                        Call to Get Started
+                    </a>
+                </div>
+
+                <div class="sp-price-card sp-price-featured">
+                    <div class="sp-pc-badge">Most Popular</div>
+                    <div class="sp-pc-header">
+                        <div class="sp-pc-icon sp-pc-icon-grad">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" width="22" height="22"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        </div>
+                        <h3>Full Advisory</h3>
+                        <p>Complete guidance package</p>
+                    </div>
+                    <div class="sp-pc-price sp-pc-price-grad"><span>$99</span><small>.99</small></div>
+                    <ul class="sp-pc-features">
+                        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="14" height="14"><polyline points="20,6 9,17 4,12"/></svg> Everything in Basic</li>
+                        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="14" height="14"><polyline points="20,6 9,17 4,12"/></svg> Streaming platform setup help</li>
+                        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="14" height="14"><polyline points="20,6 9,17 4,12"/></svg> Internet speed analysis</li>
+                        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="14" height="14"><polyline points="20,6 9,17 4,12"/></svg> 60-minute advisor call</li>
+                        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="14" height="14"><polyline points="20,6 9,17 4,12"/></svg> 7-day follow-up support</li>
+                    </ul>
+                    <a href="tel:+18883594451" class="btn-hero-primary" style="width:100%;justify-content:center;text-align:center;">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="15" height="15"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                        Call (888) 359-4451
+                    </a>
+                </div>
+
+                <div class="sp-price-card">
+                    <div class="sp-pc-header">
+                        <div class="sp-pc-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" width="22" height="22"><rect x="5" y="2" width="14" height="20" rx="2"/><path d="M12 18h.01"/></svg>
+                        </div>
+                        <h3>Business Advisory</h3>
+                        <p>For commercial &amp; enterprise</p>
+                    </div>
+                    <div class="sp-pc-price"><span>$199</span><small>.99</small></div>
+                    <ul class="sp-pc-features">
+                        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="14" height="14"><polyline points="20,6 9,17 4,12"/></svg> Everything in Full Advisory</li>
+                        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="14" height="14"><polyline points="20,6 9,17 4,12"/></svg> Business internet guidance</li>
+                        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="14" height="14"><polyline points="20,6 9,17 4,12"/></svg> Multi-location support</li>
+                        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="14" height="14"><polyline points="20,6 9,17 4,12"/></svg> 90-minute advisor call</li>
+                        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="14" height="14"><polyline points="20,6 9,17 4,12"/></svg> 15-day follow-up support</li>
+                    </ul>
+                    <a href="tel:+18883594451" class="btn-hero-secondary" style="width:100%;justify-content:center;text-align:center;">
+                        Call to Get Started
+                    </a>
+                </div>
+            </div>
+
+            <div class="sp-pricing-disclaimer">
+                <svg viewBox="0 0 16 16" fill="currentColor" width="14" height="14" style="flex-shrink:0"><path d="M8 1a7 7 0 1 0 0 14A7 7 0 0 0 8 1zm0 3a.75.75 0 1 1 0 1.5A.75.75 0 0 1 8 4zm-.25 3h1.5v4h-1.5V7z"/></svg>
+                <p>All fees are for independent guidance services only. Sapphire Internet does not sell internet plans, cable TV packages, or streaming subscriptions. You purchase services directly from providers. All fees are clearly disclosed before any purchase. Refunds available per our <a href="refund-policy.html">Refund Policy</a>.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="sp-cta-section">
+        <div class="container">
+            <div class="sp-cta-box">
+                <div class="section-label">Questions?</div>
+                <h2>Not Sure Which <span class="grad-text">Option Is Right?</span></h2>
+                <p>Call us and our advisors will guide you to the right service level based on your specific needs — at no obligation.</p>
+                <div class="sp-cta-btns">
+                    <a href="tel:+18883594451" class="btn-hero-primary">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="17" height="17"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                        Call (888) 359-4451
+                    </a>
+                    <a href="services.html" class="btn-hero-secondary">View Services</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="sp-footer">
+        <div class="container">
+            <div class="sp-footer-grid">
+                <div class="sp-footer-brand">
+                    <div class="sp-footer-logo">
+                        <svg viewBox="0 0 32 32" fill="none" width="22" height="22"><path d="M16 2L28 8V16C28 22.627 22.627 28 16 28C9.373 28 4 22.627 4 16V8L16 2Z" fill="url(#flg4)"/><path d="M11 16L14 19L21 12" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/><defs><linearGradient id="flg4" x1="4" y1="2" x2="28" y2="28" gradientUnits="userSpaceOnUse"><stop stop-color="#6366F1"/><stop offset="1" stop-color="#EC4899"/></linearGradient></defs></svg>
+                        <span class="logo-word">Sapphire</span><span class="logo-sub">Internet</span>
+                    </div>
+                    <p>Independent third-party guidance platform. Not an ISP. Not affiliated with any provider.</p>
+                    <a href="tel:+18883594451" class="sp-footer-phone">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                        (888) 359-4451
+                    </a>
+                </div>
+                <div class="sp-footer-col">
+                    <h4>Services</h4>
+                    <ul><li><a href="services.html">Streaming Guidance</a></li><li><a href="services.html">Internet Guidance</a></li><li><a href="services.html">24/7 Advisors</a></li></ul>
+                </div>
+                <div class="sp-footer-col">
+                    <h4>Company</h4>
+                    <ul><li><a href="about.html">About Us</a></li><li><a href="contact.html">Contact</a></li><li><a href="index.html">Home</a></li></ul>
+                </div>
+                <div class="sp-footer-col">
+                    <h4>Legal</h4>
+                    <ul><li><a href="privacy-policy.html">Privacy Policy</a></li><li><a href="terms-conditions.html">Terms</a></li><li><a href="refund-policy.html">Refund Policy</a></li><li><a href="disclaimer.html">Disclaimer</a></li></ul>
+                </div>
+            </div>
+            <div class="sp-footer-bottom">
+                <p>&copy; 2025 Sapphire Internet. All rights reserved. Independent guidance platform.</p>
+            </div>
+        </div>
+    </footer>
+
     <script src="script.js"></script>
 </body>
 </html>
-
-
